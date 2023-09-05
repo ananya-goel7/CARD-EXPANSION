@@ -18,22 +18,25 @@
 }
 
 .prod-imag{
- 
     padding-left: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     height: 200px;
-  
+    border-radius: 10%;
 }
 
 .prod-name{
+    background-color: #f1f1f1;
     margin-bottom: 1.5rem;
     margin-left: 0.2rem;
-    color: azure;
+    color: rgb(0, 0, 0);
     font-size: 1.5rem;
     font-family: 'Acme', sans-serif;
+    /* margin: 10px; */
+    border-radius: 10px;
+    padding: 5px 30px; 
 }
 
 .secondary-line{
@@ -118,13 +121,13 @@
 
 .map{
     margin:20px;
-    width:49vw;
-    font-family: 'PT Sans', sans-serif;
-    overflow: hidden;
+    width:600px;
+    height: 400px;
+    /* overflow: hidden;
      text-overflow: ellipsis;
       display: -webkit-box;
      -webkit-line-clamp: 15;
-     -webkit-box-orient: vertical;
+     -webkit-box-orient: vertical; */
 
 }
 
@@ -135,11 +138,33 @@
     width: 25px; 
     background-color: rgb(255, 255, 255);
     padding: 5px;
-    border-radius: 10%;
+    border-radius: 2%;
     cursor: pointer;
     text-align: center;
     /* align-items: center; */
+    /* font-family: 'Montserrat', sans-serif; */
+    display: flex;
+    align-items: center;
 }
+
+
+/* .back-button i {
+    background-color: white;
+    padding: 5px; /* You may adjust the padding as needed */
+    /*border-radius: 2%;
+    font-family: 'Montserrat', sans-serif;
+} */
+
+.back-button span {
+    background-color: white; /* Add this line to set the white background */
+    padding: 5px; /* You can adjust the padding as needed */
+    border-radius: 2%;
+    font-family: 'Montserrat', sans-serif;
+    color: black; 
+    font-size: 0.75rem;
+}
+
+
 .backimage{
     padding-top: 3px;
     padding-left: 3px;
@@ -151,4 +176,17 @@
 .prod-info {
     display: none;
 }
+.map img {
+    /* Set the width and height for the image to 100% to fit the container */
+    width: 100%;
+    height: 100%;
+    /* Add any other image-specific styles if needed */
+}
 
+@media screen and (max-width: 480px) {
+    .secondary-line{
+        display: block;
+        flex-direction: column;
+        align-items: center;
+    }
+}
